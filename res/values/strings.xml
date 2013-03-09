@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NodePing</string>
+    <string name="action_settings">Settings</string>
+    <string name="scrollable_list">Scrollable list here:</string>
+    <string name="list_label">This is the server list</string>
+    <string name="action_update">Update</string>
+    
+</resources>

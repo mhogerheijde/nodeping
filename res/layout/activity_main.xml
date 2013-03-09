@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView 
+        android:text="@string/list_label"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/nodeping_api_key_text_view"
+        />
+
+	
+    <net.hogerheijde.nodeping.views.ServerListLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical" 
+        android:background="@drawable/border"
+        android:id="@+id/server_list_layout" 
+       	>
+
+        
+        
+       </net.hogerheijde.nodeping.views.ServerListLayout>
+
+    <TextView 
+        android:text="@string/list_label"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        />
+    
+</LinearLayout>

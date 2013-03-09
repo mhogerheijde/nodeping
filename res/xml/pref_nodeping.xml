@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory 
+	    android:title="@string/pref_header_nodeping_api">
+	    
+	</PreferenceCategory>
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+    	android:capitalize="none"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapCharacters"
+        android:key="nodeping_api_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_nodeping_api_key" />
+    
+</PreferenceScreen>
