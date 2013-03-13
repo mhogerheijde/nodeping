@@ -2,7 +2,8 @@ package net.hogerheijde.nodeping.domain;
 
 public enum ServerState {
 	FAIL("fail"),
-	PASS("pass");
+	PASS("pass"), 
+	PENDING("...");
 	
 	public final String label;
 	

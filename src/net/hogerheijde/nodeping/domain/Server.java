@@ -6,6 +6,7 @@ public class Server {
 	
 	public Server(String name) {
 		this.name = name;
+		state = ServerState.PENDING;
 	}
 	
 	public void setState(ServerState state) {

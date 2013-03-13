@@ -61,7 +61,7 @@ public class ServerListLayout extends ScrollView {
 	public void update() {
 		serverListLL.removeAllViews();
 		for (Server server : manager.getServerList()) {
-			ServerView view = new ServerView(getContext());
+			CheckView view = new CheckView(getContext());
 			view.setServer(server);
 			serverListLL.addView(view);
 		}

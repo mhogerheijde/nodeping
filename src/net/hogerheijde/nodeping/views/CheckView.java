@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class ServerView extends RelativeLayout {
+public class CheckView extends RelativeLayout {
 
 	private TextView serverName;
 	private TextView serverState;
@@ -20,25 +20,25 @@ public class ServerView extends RelativeLayout {
 	private Server server;
 	
 	
-	public ServerView(Context context, AttributeSet attrs, int defStyle) {
+	public CheckView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		this.init();
 		this.initAttr(attrs);
 	}
 
-	public ServerView(Context context, AttributeSet attrs) {
+	public CheckView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		this.init();
 		this.initAttr(attrs);
 	}
 
-	public ServerView(Context context) {
+	public CheckView(Context context) {
 		super(context);
 		this.init();
 	}
 	
 	private void init() {
-		LayoutInflater.from(getContext()).inflate(R.layout.server_view, this, true);
+		LayoutInflater.from(getContext()).inflate(R.layout.check_view, this, true);
 		serverName = (TextView) findViewById(R.id.server_name);
 		serverState = (TextView) findViewById(R.id.server_state);
 	}
@@ -67,10 +67,10 @@ public class ServerView extends RelativeLayout {
 	// Helper functions
 	
 	private void initAttr(AttributeSet attrs){  
-	    TypedArray a = getContext().obtainStyledAttributes(attrs,R.styleable.ServerView);
+	    TypedArray a = getContext().obtainStyledAttributes(attrs,R.styleable.CheckView);
 	    
 	    //Use a
-	    String server_name = a.getString(R.styleable.ServerView_server_name);
+	    String server_name = a.getString(R.styleable.CheckView_server_name);
 		Log.i("test", server_name);
 
 	    //Don't forget this

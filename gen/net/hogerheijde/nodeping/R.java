@@ -39,18 +39,16 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0005;
-        public static final int action_update=0x7f0a0006;
+        public static final int action_settings=0x7f0a0004;
+        public static final int action_update=0x7f0a0005;
         public static final int nodeping_api_key_text_view=0x7f0a0000;
-        public static final int server_list=0x7f0a0002;
         public static final int server_list_layout=0x7f0a0001;
-        public static final int server_name=0x7f0a0003;
-        public static final int server_state=0x7f0a0004;
+        public static final int server_name=0x7f0a0002;
+        public static final int server_state=0x7f0a0003;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int server_list_layout=0x7f030001;
-        public static final int server_view=0x7f030002;
+        public static final int check_view=0x7f030001;
     }
     public static final class menu {
         public static final int display_message=0x7f090000;
@@ -115,22 +113,22 @@ containing a value of this type.
         public static final int pref_nodeping=0x7f040001;
     }
     public static final class styleable {
-        /** Attributes that can be used with a ServerView.
+        /** Attributes that can be used with a CheckView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ServerView_server_name net.hogerheijde.nodeping:server_name}</code></td><td></td></tr>
+           <tr><td><code>{@link #CheckView_server_name net.hogerheijde.nodeping:server_name}</code></td><td></td></tr>
            </table>
-           @see #ServerView_server_name
+           @see #CheckView_server_name
          */
-        public static final int[] ServerView = {
+        public static final int[] CheckView = {
             0x7f010000
         };
         /**
           <p>This symbol is the offset where the {@link net.hogerheijde.nodeping.R.attr#server_name}
-          attribute's value can be found in the {@link #ServerView} array.
+          attribute's value can be found in the {@link #CheckView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -141,6 +139,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name android:server_name
         */
-        public static final int ServerView_server_name = 0;
+        public static final int CheckView_server_name = 0;
     };
 }
